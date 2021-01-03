@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TweetDataCollectionViewCell" id="gTV-IL-0wX" customClass="TweetDataCollectionViewCell" customModule="Smashtag" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LlE-xG-wRv">
+                        <rect key="frame" x="15" y="15" width="70" height="70"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="UVC-LF-hJD"/>
+                            <constraint firstAttribute="width" secondItem="LlE-xG-wRv" secondAttribute="height" multiplier="1:1" id="dn8-BG-Jv4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-s3-MuD">
+                        <rect key="frame" x="100" y="15" width="214" height="24"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-ZU-GVa">
+                        <rect key="frame" x="100" y="54" width="214" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="214" id="jEc-y4-ULb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017.12.12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks6-4e-mS1">
+                        <rect key="frame" x="15" y="100" width="70" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="YSY-gE-TXQ">
+                        <rect key="frame" x="319" y="77" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="KhV-YX-q2J"/>
+                            <constraint firstAttribute="width" secondItem="YSY-gE-TXQ" secondAttribute="height" multiplier="1:1" id="tDm-Wd-Uxl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCI-wh-uU0">
+                        <rect key="frame" x="15" y="123.5" width="70" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LlE-xG-wRv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="04c-zD-MZn"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XaY-ZU-GVa" secondAttribute="bottom" constant="10" id="6SG-Kd-vpB"/>
+                <constraint firstItem="XaY-ZU-GVa" firstAttribute="top" secondItem="yLB-s3-MuD" secondAttribute="bottom" constant="15" id="70f-bI-4oe"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nCI-wh-uU0" secondAttribute="bottom" constant="10" id="Gq5-bm-YmI"/>
+                <constraint firstItem="yLB-s3-MuD" firstAttribute="leading" secondItem="LlE-xG-wRv" secondAttribute="trailing" constant="15" id="H19-zf-9E4"/>
+                <constraint firstItem="XaY-ZU-GVa" firstAttribute="trailing" secondItem="yLB-s3-MuD" secondAttribute="trailing" id="HuG-i7-cyt"/>
+                <constraint firstItem="ks6-4e-mS1" firstAttribute="trailing" secondItem="LlE-xG-wRv" secondAttribute="trailing" id="I6I-Ki-3bU"/>
+                <constraint firstItem="nCI-wh-uU0" firstAttribute="leading" secondItem="ks6-4e-mS1" secondAttribute="leading" id="IdX-LE-HZW"/>
+                <constraint firstItem="yLB-s3-MuD" firstAttribute="top" secondItem="LlE-xG-wRv" secondAttribute="top" id="KZT-eu-Qll"/>
+                <constraint firstItem="ks6-4e-mS1" firstAttribute="top" secondItem="LlE-xG-wRv" secondAttribute="bottom" constant="15" id="S2W-Rt-A2m"/>
+                <constraint firstItem="YSY-gE-TXQ" firstAttribute="leading" secondItem="yLB-s3-MuD" secondAttribute="trailing" constant="5" id="TPA-zN-xPf"/>
+                <constraint firstItem="ks6-4e-mS1" firstAttribute="leading" secondItem="LlE-xG-wRv" secondAttribute="leading" id="cRR-cK-uGn"/>
+                <constraint firstItem="XaY-ZU-GVa" firstAttribute="leading" secondItem="yLB-s3-MuD" secondAttribute="leading" id="n5g-uq-dHz"/>
+                <constraint firstItem="nCI-wh-uU0" firstAttribute="trailing" secondItem="ks6-4e-mS1" secondAttribute="trailing" id="pN5-o2-0sk"/>
+                <constraint firstItem="YSY-gE-TXQ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="vNh-1l-1Lc"/>
+                <constraint firstItem="nCI-wh-uU0" firstAttribute="top" secondItem="ks6-4e-mS1" secondAttribute="bottom" constant="5" id="w97-D6-3WT"/>
+                <constraint firstItem="LlE-xG-wRv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="wFd-pd-imD"/>
+                <constraint firstAttribute="trailing" secondItem="YSY-gE-TXQ" secondAttribute="trailing" constant="5" id="ykP-Sx-xbe"/>
+            </constraints>
+            <connections>
+                <outlet property="imageNext" destination="YSY-gE-TXQ" id="j3i-ax-Aen"/>
+                <outlet property="imageUser" destination="LlE-xG-wRv" id="1TP-Ys-lq7"/>
+                <outlet property="labelAccount" destination="yLB-s3-MuD" id="ieC-tz-G3x"/>
+                <outlet property="labelContent" destination="XaY-ZU-GVa" id="kOP-9m-5BV"/>
+                <outlet property="labelContentWidthConstraint" destination="jEc-y4-ULb" id="D8g-Wg-B4N"/>
+                <outlet property="labelDay" destination="ks6-4e-mS1" id="88S-4P-itT"/>
+                <outlet property="labelTime" destination="nCI-wh-uU0" id="Ues-le-GLW"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="16" height="16"/>
+    </resources>
+</document>

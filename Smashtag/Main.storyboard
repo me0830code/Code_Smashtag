@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G2016" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vdk-fK-NbI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gib-NJ-ZW6">
+            <objects>
+                <tabBarController id="vdk-fK-NbI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ScO-bO-ue9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ay7-ON-dXT" kind="relationship" relationship="viewControllers" id="X2k-W9-bU6"/>
+                        <segue destination="pts-UT-uao" kind="relationship" relationship="viewControllers" id="2CG-Jo-c88"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTq-Hh-08m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-937" y="-67"/>
+        </scene>
+        <!--Twitter-->
+        <scene sceneID="Lap-kq-8Mh">
+            <objects>
+                <navigationController id="ay7-ON-dXT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Twitter" image="Twitter" id="DzZ-IB-hZ4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gvz-AJ-cjF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PPf-iU-QH3" kind="relationship" relationship="rootViewController" id="JCh-ai-Ixz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owp-qA-L4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="-394"/>
+        </scene>
+        <!--Twitter-->
+        <scene sceneID="WXb-gn-ivy">
+            <objects>
+                <viewController storyboardIdentifier="ShowingDataViewController" id="PPf-iU-QH3" customClass="ShowingDataViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4M-xM-OYe"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJE-SK-g9t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJg-Iz-kKi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zau-wj-gug">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="G4T-xJ-UOs">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-SB-vsB">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="510"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3X8-BW-Mkc">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前無任何搜尋結果！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJr-KM-xac">
+                                <rect key="frame" x="38" y="316.5" width="300" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zau-wj-gug" secondAttribute="trailing" id="61M-sI-zfW"/>
+                            <constraint firstItem="zau-wj-gug" firstAttribute="top" secondItem="t4M-xM-OYe" secondAttribute="bottom" id="EE9-kf-1Kj"/>
+                            <constraint firstItem="OJr-KM-xac" firstAttribute="centerY" secondItem="UJg-Iz-kKi" secondAttribute="centerY" id="Fv9-St-X1P"/>
+                            <constraint firstItem="OJr-KM-xac" firstAttribute="centerX" secondItem="UJg-Iz-kKi" secondAttribute="centerX" id="XpB-fx-UDm"/>
+                            <constraint firstItem="zau-wj-gug" firstAttribute="leading" secondItem="UJg-Iz-kKi" secondAttribute="leading" id="nHK-83-crO"/>
+                            <constraint firstItem="QJE-SK-g9t" firstAttribute="top" secondItem="zau-wj-gug" secondAttribute="bottom" id="q48-4J-CQh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Twitter" image="Twitter" id="dZl-r9-RDD"/>
+                    <navigationItem key="navigationItem" id="YQd-B1-XN9">
+                        <barButtonItem key="rightBarButtonItem" id="lNn-Le-AVl">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="6hC-U3-hnW">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="Article"/>
+                                    <segment title="" image="Gallery"/>
+                                </segments>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dataCollectionView" destination="1gw-SB-vsB" id="43V-Qg-SL1"/>
+                        <outlet property="labelNoData" destination="OJr-KM-xac" id="pVa-AE-ria"/>
+                        <outlet property="tagSearchBar" destination="G4T-xJ-UOs" id="bee-x8-kLt"/>
+                        <outlet property="typeSegmentedControl" destination="6hC-U3-hnW" id="2dU-0m-iUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKE-eq-JHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="-394.45277361319341"/>
+        </scene>
+        <!--Detail Data Table View Controller-->
+        <scene sceneID="Pbl-OL-lAu">
+            <objects>
+                <tableViewController storyboardIdentifier="DetailDataTableViewController" hidesBottomBarWhenPushed="YES" id="AmK-FZ-Otv" customClass="DetailDataTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="FW2-I5-cWB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="AmK-FZ-Otv" id="idN-gS-ldY"/>
+                            <outlet property="delegate" destination="AmK-FZ-Otv" id="ltV-jI-7t6"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4H-pH-8Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="-394"/>
+        </scene>
+        <!--Recents-->
+        <scene sceneID="a6Z-yd-1CB">
+            <objects>
+                <navigationController id="pts-UT-uao" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recents" image="Recents" id="JJd-ff-aLV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9UX-nQ-5ne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EKR-iv-DOv" kind="relationship" relationship="rootViewController" id="q3g-pI-gvJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56J-1y-2q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="306"/>
+        </scene>
+        <!--Recents-->
+        <scene sceneID="S4c-gr-Jyc">
+            <objects>
+                <tableViewController storyboardIdentifier="RecentSearchTableViewController" id="EKR-iv-DOv" customClass="RecentSearchTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w43-0f-TMM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="EKR-iv-DOv" id="daC-Hz-6Qx"/>
+                            <outlet property="delegate" destination="EKR-iv-DOv" id="MLz-45-VNl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Recents" image="Recents" id="g8T-E3-OQw"/>
+                    <navigationItem key="navigationItem" id="2Qt-Qv-YpL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="GlB-8K-loi"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocq-Ws-H14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Article" width="24" height="24"/>
+        <image name="Gallery" width="24" height="24"/>
+        <image name="Recents" width="32" height="32"/>
+        <image name="Twitter" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "772B19929511BDF7F052513C8704E4247EDDFE54",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "772B19929511BDF7F052513C8704E4247EDDFE54" : 9223372036854775807,
+    "A1DEFA9CF3212CA5009FB77C16FC7FC3FCBECE67" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4897B3DF-303D-448A-8086-591DFF5F969E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "772B19929511BDF7F052513C8704E4247EDDFE54" : "Smashtag\/",
+    "A1DEFA9CF3212CA5009FB77C16FC7FC3FCBECE67" : "Portfolio\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Smashtag",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Smashtag.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chien0830y\/Smashtag.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "772B19929511BDF7F052513C8704E4247EDDFE54"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chien0830y\/Portfolio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1DEFA9CF3212CA5009FB77C16FC7FC3FCBECE67"
+    }
+  ]
+}

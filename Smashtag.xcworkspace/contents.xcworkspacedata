@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Tag+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Tag+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Twitter/Twitter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Smashtag.xcodeproj">
+   </FileRef>
+</Workspace>
