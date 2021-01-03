@@ -8,12 +8,12 @@ Side Project for Course - Developing Apps for iOS, CS193P at Stanford University
 2. CoreData
 
 # Demo
-* Search Page / Detail Page
+Search Page & Detail Page
 
 ![](https://i.imgur.com/TVv90GE.png)
 ![](https://i.imgur.com/6N2ZoZX.png)
 
-* Gallery Page / Record Page
+Gallery Page & Record Page
 
 ![](https://i.imgur.com/CUOSCEB.png)
 ![](https://i.imgur.com/BXb7lpQ.png)
