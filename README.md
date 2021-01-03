@@ -5,7 +5,8 @@ Date : 106 / 06 / 29
 Side Project for Course - Developing Apps for iOS, CS193P at Stanford University
 
 1. Request From Twitter
-2. CoreData
+2. MVC Design Pattern
+3. CoreData
 
 # Demo
 Search Page & Detail Page
