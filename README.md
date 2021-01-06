@@ -2,7 +2,7 @@
 Date : 106 / 06 / 29
 
 # Motivation & Purpose
-Side Project for Course - Developing Apps for iOS, CS193P at Stanford University
+Side Project - Developing Apps for iOS ( CS193P ) at Stanford University
 
 1. Request From Twitter
 2. MVC Design Pattern
