@@ -1,5 +1,5 @@
 # Smashtag
-Date : 106 / 06 / 29
+Date : 2017 / 06 / 29
 
 # Motivation & Purpose
 Side Project - Developing Apps for iOS ( CS193P ) at Stanford University
